@@ -5,14 +5,14 @@
 function controllaSePalindroma(parola) {
 
     // capire quanto è lunga la stringa
-    let lunghezzaStringa = parola.length;
+    let lunghezzaParola = parola.length;
 
     // uso un ciclo per metà della stringa
-    for (let i=0; i < lunghezzaStringa / 2; i++) {
+    for (let i=0; i < lunghezzaParola / 2; i++) {
 
         // controllo se la prima e l'ultima parte della stringa sono diverse:
         // se lo sono, la parola non è palindroma
-        if (parola[i] !== parola[lunghezzaStringa - 1 - i]) {
+        if (parola[i] !== parola[lunghezzaParola - 1 - i]) {
             return "non palindroma";
         }
     }

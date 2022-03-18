@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Palindroma</title>
 </head>
-<body>
-    <h1 id="controlloPalindroma"></h1>
+<body class="container-fluid bg-secondary d-flex flex-column justify-content-center">
+    
+    <!-- quello che l'utente vedrà stampato -->
+    <h1 class="row-cols-12 display-2 text-white fw-bold pt-5 mt-5 text-center">La parola è palindroma?</h1>
+    <span class="row-cols-12 text-white text-center lead">(se vuoi verificare una frase, scrivila senza spazi!)</span>
+    <span class="row-cols-12 display-2 text-white p-5 text-center" id="controlloPalindroma"></span>
+    <button type="button" class="w-25 rounded-pill lead mx-auto my-5" onClick="window.location.reload();">Ricarica</button>
+
+    <!-- questo regge tutto il baraccone di Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- appoggio qui il collegamento al main.js, spero nessuno me lo rubi -->
     <script type="text/javascript" src="./main.js"></script>
+
 </body>
 </html>
